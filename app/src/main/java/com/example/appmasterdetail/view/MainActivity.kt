@@ -32,6 +32,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        Toast.makeText(this, "test", Toast.LENGTH_SHORT).show()
 
         val userAdapterViewModel = UserAdapterViewModel()
         binding.layout.setOnClickListener {
