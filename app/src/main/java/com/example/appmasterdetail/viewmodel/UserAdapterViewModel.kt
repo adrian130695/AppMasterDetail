@@ -3,9 +3,7 @@ package com.example.appmasterdetail.viewmodel
 import android.util.Log
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.example.appmasterdetail.BuildConfig.DEBUG
 import com.example.appmasterdetail.model.ApiService
-import com.example.appmasterdetail.model.Results
 import com.example.appmasterdetail.model.UserModel
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
