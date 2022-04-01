@@ -20,7 +20,8 @@ class UserAdapterViewModel(application: Application) : AndroidViewModel(applicat
     init {
         apiCall()
     }
-    fun apiCall() {
+
+    private fun apiCall() {
         CoroutineScope(Dispatchers.IO).launch {
             Log.d("apiCall1", userMutableLiveData.toString())
             val call = Retrofit.Builder()
@@ -30,7 +31,6 @@ class UserAdapterViewModel(application: Application) : AndroidViewModel(applicat
                 .create(ApiService::class.java).getRandomUsers("./?results=50")
 
             userMutableLiveData.postValue(call.body())
-            Log.d("apiCall2", userMutableLiveData.toString())
         }
     }
 
