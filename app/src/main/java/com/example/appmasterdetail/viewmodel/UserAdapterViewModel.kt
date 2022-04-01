@@ -20,7 +20,6 @@ class UserAdapterViewModel(application: Application) : AndroidViewModel(applicat
     init {
         apiCall()
     }
-
     fun apiCall() {
         CoroutineScope(Dispatchers.IO).launch {
             Log.d("apiCall1", userMutableLiveData.toString())

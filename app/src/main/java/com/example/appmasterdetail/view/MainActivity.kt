@@ -32,43 +32,10 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val userAdapterViewModel = UserAdapterViewModel()
-        binding.layout.setOnClickListener {
-            userAdapterViewModel.apiCall()
-        }
-
-        viewModel.userMutableLiveData.observe(this, Observer {
+        viewModel.userMutableLiveData.observe(this) {
             val recyclerView = binding.recycler
             recyclerView.layoutManager = LinearLayoutManager(this)
             recyclerView.adapter = UserAdapter(it.results)
-        })
-//        consulta()
+        }
     }
-
-//    private fun initRecyclerView() {
-//        val recyclerView = binding.recycler
-//        recyclerView.layoutManager = LinearLayoutManager(this)
-//        recyclerView.adapter = UserAdapter(userList.results)
-//    }
-
-//    private fun consulta() {
-//        CoroutineScope(Dispatchers.IO).launch {
-//            val call = Retrofit.Builder()
-//                .baseUrl("https://randomuser.me/api/")
-//                .addConverterFactory(GsonConverterFactory.create())
-//                .build()
-//                .create(ApiService::class.java).getRandomUsers("./?results=50")
-//
-//            userList = call.body()!!
-//            runOnUiThread {
-//
-//                if (call.isSuccessful) {
-////                    showMessage(userList.results.size.toString())
-//                    initRecyclerView()
-//                } else {
-////                    showMessage("Ha ocurrido un error")
-//                }
-//            }
-//        }
-//    }
 }
