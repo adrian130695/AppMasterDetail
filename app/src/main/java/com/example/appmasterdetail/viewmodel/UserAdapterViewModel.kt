@@ -4,10 +4,7 @@ import android.app.Application
 import android.util.Log
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.MutableLiveData
-<<<<<<< Updated upstream
-=======
-import androidx.lifecycle.ViewModel
->>>>>>> Stashed changes
+
 import com.example.appmasterdetail.model.ApiService
 import com.example.appmasterdetail.model.UserModel
 import kotlinx.coroutines.CoroutineScope
@@ -24,21 +21,18 @@ class UserAdapterViewModel(application: Application) : AndroidViewModel(applicat
         apiCall()
     }
 
-<<<<<<< Updated upstream
     private fun apiCall() {
-=======
-    fun apiCall() {
->>>>>>> Stashed changes
-        CoroutineScope(Dispatchers.IO).launch {
-            Log.d("apiCall1", userMutableLiveData.toString())
-            val call = Retrofit.Builder()
-                .baseUrl("https://randomuser.me/api/")
-                .addConverterFactory(GsonConverterFactory.create())
-                .build()
-                .create(ApiService::class.java).getRandomUsers("./?results=50")
+        fun apiCall() {
+            CoroutineScope(Dispatchers.IO).launch {
+                Log.d("apiCall1", userMutableLiveData.toString())
+                val call = Retrofit.Builder()
+                    .baseUrl("https://randomuser.me/api/")
+                    .addConverterFactory(GsonConverterFactory.create())
+                    .build()
+                    .create(ApiService::class.java).getRandomUsers("./?results=50")
 
-            userMutableLiveData.postValue(call.body())
+                userMutableLiveData.postValue(call.body())
+            }
         }
     }
-
 }
