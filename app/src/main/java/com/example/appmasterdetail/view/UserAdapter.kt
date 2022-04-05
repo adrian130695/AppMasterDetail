@@ -31,8 +31,8 @@ class UserAdapter(private var userModelList: ArrayList<Results>) :
         return UserViewHolder(layoutInflater.inflate(R.layout.item_user, parent, false))
     }
 
-    override fun onBindViewHolder(holder: UserViewHolder, p: Int) {
-        val item = userModelList[p]
+    override fun onBindViewHolder(holder: UserViewHolder, pos: Int) {
+        val item = userModelList[pos]
         val context = holder.itemUser.context
         holder.render(item)
         holder.itemUser.setOnClickListener {

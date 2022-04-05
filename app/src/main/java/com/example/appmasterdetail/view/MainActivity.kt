@@ -24,7 +24,6 @@ import retrofit2.converter.gson.GsonConverterFactory
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
-    private lateinit var userList: UserModel
     private val viewModel: UserAdapterViewModel by viewModels()
 
     override fun onCreate(savedInstanceState: Bundle?) {
