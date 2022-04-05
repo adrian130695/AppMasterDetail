@@ -4,6 +4,10 @@ import android.app.Application
 import android.util.Log
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.MutableLiveData
+<<<<<<< Updated upstream
+=======
+import androidx.lifecycle.ViewModel
+>>>>>>> Stashed changes
 import com.example.appmasterdetail.model.ApiService
 import com.example.appmasterdetail.model.UserModel
 import kotlinx.coroutines.CoroutineScope
@@ -20,7 +24,11 @@ class UserAdapterViewModel(application: Application) : AndroidViewModel(applicat
         apiCall()
     }
 
+<<<<<<< Updated upstream
     private fun apiCall() {
+=======
+    fun apiCall() {
+>>>>>>> Stashed changes
         CoroutineScope(Dispatchers.IO).launch {
             Log.d("apiCall1", userMutableLiveData.toString())
             val call = Retrofit.Builder()

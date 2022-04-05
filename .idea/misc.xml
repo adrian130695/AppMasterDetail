@@ -5,9 +5,16 @@
       <map>
         <entry key="..\:/Users/adria/AndroidStudioProjects/AppMasterDetail/app/src/main/res/layout/activity_main.xml" value="0.24010416666666667" />
         <entry key="..\:/Users/adria/AndroidStudioProjects/AppMasterDetail/app/src/main/res/layout/item_user.xml" value="0.25416666666666665" />
+<<<<<<< Updated upstream
         <entry key="..\:/local/AppMasterDetail/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
         <entry key="..\:/local/AppMasterDetail/app/src/main/res/layout/activity_user.xml" value="0.25416666666666665" />
         <entry key="..\:/local/AppMasterDetail/app/src/main/res/layout/item_user.xml" value="0.21944444444444444" />
+=======
+        <entry key="..\:/local/AppMasterDetail/app/src/main/res/layout/fragment_first.xml" value="0.25416666666666665" />
+        <entry key="..\:/local/AppMasterDetail/app/src/main/res/layout/fragment_second.xml" value="0.25416666666666665" />
+        <entry key="..\:/local/AppMasterDetail/app/src/main/res/layout/item_user.xml" value="0.25416666666666665" />
+        <entry key="..\:/local/AppMasterDetail/app/src/main/res/layout/user_detail.xml" value="0.25416666666666665" />
+>>>>>>> Stashed changes
       </map>
     </option>
   </component>

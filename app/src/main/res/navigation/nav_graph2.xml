@@ -2,18 +2,14 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/nav_graph"
+    android:id="@+id/nav_graph2"
     app:startDestination="@id/FirstFragment">
 
     <fragment
         android:id="@+id/FirstFragment"
         android:name="com.example.appmasterdetail.view.FirstFragment"
         android:label="@string/first_fragment_label"
-<<<<<<< Updated upstream
         tools:layout="@layout/fragment_first" >
-=======
-        tools:layout="@layout/fragment_first">
->>>>>>> Stashed changes
 
         <action
             android:id="@+id/action_FirstFragment_to_SecondFragment"
@@ -23,11 +19,7 @@
         android:id="@+id/SecondFragment"
         android:name="com.example.appmasterdetail.view.SecondFragment"
         android:label="@string/second_fragment_label"
-<<<<<<< Updated upstream
         tools:layout="@layout/fragment_second" >
-=======
-        tools:layout="@layout/fragment_second">
->>>>>>> Stashed changes
 
         <action
             android:id="@+id/action_SecondFragment_to_FirstFragment"
